@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    height: 50px;
+    background-color: #7C809B;
+
+}
+.menu {
+    position: fixed;
+    width: 100%;
+}
+.menu-btn::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../icons/bars-solid.svg);
+    background-repeat: no-repeat;
+    padding:2.3rem;
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+
+.menu-content {
+    display: none;
+    flex-direction:column;
+    justify-content: start;
+    width: auto;
+    background-color: #8b8fac;
+
+}
+.menu:hover .menu-content{
+    display: flex;
+}
+.menu-content a {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.inicio{
+
+}
+
