@@ -7,13 +7,22 @@ html {
     font-family:'Roboto', sans-serif;
 }
 header {
+    margin-top: 1rem;
     height: 50px;
     background-color: #7C809B;
 
 }
+body{
+    background-color:#7C809B ;
+}
 .menu {
     position: fixed;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+.menu-btn {
+    width: 7rem;
 }
 .menu-btn::after {
     content: "";
@@ -30,7 +39,7 @@ header {
     display: none;
     flex-direction:column;
     justify-content: start;
-    width: auto;
+    width: 100rem;
     background-color: #7C809B;
 
 }
@@ -58,14 +67,16 @@ header {
     font-size: 1.5rem;
 }
 .encabezado {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .knowledge-item {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 .knowledge-item img {
     width: 2rem;
+    height: 2rem;
 }
 .knowledge {
     display: flex;
@@ -73,12 +84,13 @@ header {
     gap:1rem;
 }
 .medium {
-    background-color: rgb(87, 87, 225);
+    background-color: #a1cdf4;
 }
 .basic {
-    background-color: gray;
+    background-color: #ada9b7;
 }
 .level {
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 0.7rem;
+    font-size: 1.3rem;
 }
