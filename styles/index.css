@@ -7,7 +7,7 @@ html {
     font-family:'Roboto', sans-serif;
 }
 header {
-    padding: 1.5rem 0rem;
+    padding-bottom: 4rem;
     height: 50px;
     width: 100%;
     background-color: #7C809B;
@@ -23,11 +23,12 @@ body{
 }
 .menu{
     display: flex;
+    
 }
 .menu-content {
     display: flex;
     flex-direction:row;
-    justify-content: start;
+    justify-content: center;
     
     background-color: #7C809B;
 
@@ -58,6 +59,11 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1rem;
+}
+.knowledge-item:hover{
+    transform: scale(1.02);
+    transition:transform 500ms;
 }
 .knowledge-item img {
     width: 2rem;
@@ -70,6 +76,7 @@ body{
     gap:1rem;
 }
 .knowledge-content {
+    
     padding: 5rem;
 }
 .medium {
@@ -88,11 +95,12 @@ body{
     margin-top: 2rem;
 }
 .estudios{
+    padding: 5rem;
     margin-top: 3rem;
     background-color: #7C809B;
 }
 .estudios >.content {
-    padding: 2rem;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,17 +108,18 @@ body{
 }
 .estudios-item {
     box-shadow: 0px 0px 20px 5px rgba(50, 50, 93, 0.25);
-    width: 20rem;
+    width: 25rem;
     overflow: hidden;
     border-radius: 0.7rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 30rem;
+    height: 35rem;
+    background-color: #a2a6be;
 }
 .img img{
-    width: 20rem;
-    height: 15rem;
+    width: 25rem;
+    height: 20rem;
     object-fit: cover;
 }
 .estudios-item .content {
@@ -126,6 +135,10 @@ body{
     overflow: hidden;
     width: 30rem;
     box-shadow: 0px 0px 50px 5px rgba(50, 50, 93, 0.25);
+}
+.estudios-item:hover{
+    transform:scale(1.05);
+    transition:transform 500ms;
 }
 .card-me img {
     min-width: 30rem;
@@ -153,34 +166,30 @@ body{
         position: fixed;
         display: flex;
         flex-direction: column;
-        width: max-content;
+        width: auto;
     }
     .menu-btn {
-        width: 7rem;
+        width: 4rem;
+        height: 4rem;
+        padding: 2.4rem;
     }
-    .menu-btn::after {
-        content: "";
-        display: inline-block;
-        background-image: url(../icons/bars-solid.svg);
-        background-repeat: no-repeat;
-        padding:2.3rem;
-        margin-left: 1rem;
-        margin-top: auto;
-        margin-bottom: auto;
-        }
+
     
     .menu-content {
         display: none;
         flex-direction:column;
         justify-content: start;
-        width: 100rem;
+        width: 100%;
         background-color: #7C809B;
     
     }
     .menu:hover .menu-content{
         display: flex;
-      
+        width: 100%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 100px -20px;
+    }
+    .menu:hover {
+        width: 100%;
     }
     .menu-content a {
         font-size: 1.5rem;
@@ -193,6 +202,12 @@ body{
     .card-img img{
         width: 30rem;
         height: 30rem;
+
+    }
+    .estudios > .content {
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 @media (min-width: 767px){
@@ -203,18 +218,19 @@ body{
 
    
 }
+
 .knowledge {
     width: 50%;
 }
 .estudios {
     width: 100%;
-    padding: 5rem;
+
 
 }
 .estudios > h3 {
     font-size: 2rem;
 }
-.estudios > .content {
+/* .estudios > .content {
     padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -223,11 +239,8 @@ body{
    
     width: 20rem;
     height: 30rem;
-}
-.img img{
-    width: 20rem;
-    height: 15rem;
-}
+} */
+
  .card-me {
         width: 50%;
     }
@@ -237,16 +250,25 @@ body{
 .card{
     width: 30rem;
 }
+header{
+    padding: 2rem;
+}
+.menu-btn{
+    display: none;
+}
+.menu {
+    width: 100%;
+}
+.menu-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 }
 @media  (min-width: 1000px){
-    .estudios-item {
-        width: 20rem;
-    }
-    .img img{
-        width: 20rem;
-        height: 15rem;
-    }
+
+   
     .card{
         width: 50rem;
     }
@@ -254,4 +276,5 @@ body{
         width: 50rem;
         height: 40rem;
     }
+
 }
